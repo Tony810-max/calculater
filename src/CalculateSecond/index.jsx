@@ -30,6 +30,7 @@ export default function CalculateSecond() {
   const handleDelete =() => {
     setValueFirst('')
     setValueSecond('')
+    setResult('')
     setOperator(null)
   }
 
