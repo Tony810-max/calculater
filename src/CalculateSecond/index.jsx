@@ -27,6 +27,12 @@ export default function CalculateSecond() {
     }
   };
 
+  const handleDelete =() => {
+    setValueFirst('')
+    setValueSecond('')
+    setOperator(null)
+  }
+
   const calcResult = () => {
     if (operator && valueSecond) {
       const firstNumber = parseFloat(valueFirst);
@@ -144,7 +150,7 @@ export default function CalculateSecond() {
               </Button>
             </div>
             <div className="col-3">
-              <Button className="fs-5 w-100 d-flex justify-content-center">
+              <Button className="fs-5 w-100 d-flex justify-content-center" onClick={handleDelete}>
                 AC
               </Button>
             </div>
